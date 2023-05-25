@@ -1,95 +1,71 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+    <>
+      <header style={{ background: "red" }}>
+        <img src="../../public/assets/images/logo.svg" alt="" />
+        <nav>
+          <ul>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+          </ul>
+        </nav>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <button>Login</button>
+          <button>Sign Up</button>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+      </header>
+      <main className={styles.main}>
+        <section>
+          <h1>More than just shorter links</h1>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
           </p>
-        </a>
-      </div>
-    </main>
-  )
+          <button>Get Started</button>
+        </section>
+        <section>
+          <div>
+            <input type="text" placeholder="Shorten a link here..." />
+            <button>Shorten It!</button>
+          </div>
+        </section>
+        <section>
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </section>
+        <section>
+          <div>
+            Brand Recognition Boost your brand recognition with each click.
+            Generic links don’t mean a thing. Branded links help instil
+            confidence in your content.
+          </div>
+          <div>
+            Detailed Records Gain insights into who is clicking your links.
+            Knowing when and where people engage with your content helps inform
+            better decisions.
+          </div>
+          <div>
+            Fully Customizable Improve brand awareness and content
+            discoverability through customizable links, supercharging audience
+            engagement.
+          </div>
+        </section>
+        <div>
+          <h2>Boost your links today</h2>
+          <button>Get Started</button>
+        </div>
+      </main>
+      <footer>
+        Features Link Shortening Branded Links Analytics Resources Blog
+        Developers Support Company About Our Team Careers Contact
+      </footer>
+    </>
+  );
 }
