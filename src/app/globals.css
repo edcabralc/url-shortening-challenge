@@ -50,3 +50,17 @@ For the social icons, you can either use the SVGs provided or a font icon librar
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 24px;
+  align-items: center;
+}
+
+.container {
+  max-width: 1108px;
+  width: 100%;
+  /* margin: 32px 0; */
+}

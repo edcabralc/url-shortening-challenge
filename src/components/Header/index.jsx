@@ -1,18 +1,14 @@
+"use client";
 import Image from "next/image";
 import styles from "./Header.module.css";
+import { Navbar } from "../../components/commons/Navbar";
 
 export const Header = () => {
   return (
     <>
-      <header className={styles.headerContainer}>
+      <header className={styles.Header + " container"}>
         <Image src="../assets/images/logo.svg" alt="" width={121} height={33} />
-        <nav className="">
-          <ul>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Resources</li>
-          </ul>
-        </nav>
+        <Navbar />
         <div>
           <button>Login</button>
           <button>Sign Up</button>
