@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #base files for challenge
-/.base_files
+/.base_files/
 
 # dependencies
 /node_modules
