@@ -1,23 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
     <>
-      <header style={{ background: "red" }}>
-        <img src="../../public/assets/images/logo.svg" alt="" />
-        <nav>
-          <ul>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Resources</li>
-          </ul>
-        </nav>
-        <div>
-          <button>Login</button>
-          <button>Sign Up</button>
-        </div>
-      </header>
+      <Header />
       <main className={styles.main}>
         <section>
           <h1>More than just shorter links</h1>
