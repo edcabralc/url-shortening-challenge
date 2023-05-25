@@ -1,2 +1,28 @@
 .main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sectionHero {
+  display: flex;
+  gap: 100px;
+  height: 500px;
+}
+
+.sectionHero div:first-child {
+  flex: 1;
+}
+
+.sectionHero div:last-child {
+  flex: 1;
+}
+
+.heroImageWrap {
+  position: absolute;
+  right: 0px;
+}
+
+.heroImage {
+  /* position: relative; */
 }

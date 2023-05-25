@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 import { Header } from "@/components/Header";
 
@@ -5,14 +6,23 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className={styles.main}>
-        <section>
-          <h1>More than just shorter links</h1>
-          <p>
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
-          </p>
-          <button>Get Started</button>
+      <main className={styles.main + " container"}>
+        <section className={styles.sectionHero}>
+          <div>
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div className={styles.heroImageWrap}>
+            <Image
+              src={"/assets/images/illustration-working.svg"}
+              width={733}
+              height={482}
+              className={styles.heroImage}></Image>
+          </div>
         </section>
         <section>
           <div>

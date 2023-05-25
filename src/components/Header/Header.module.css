@@ -1,5 +1,14 @@
 .Header {
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 64px;
+}
+
+.Header div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 46px;
 }

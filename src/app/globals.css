@@ -44,7 +44,16 @@ For the social icons, you can either use the SVGs provided or a font icon librar
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com) */
-
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+  --body-copy: 18px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -55,12 +64,16 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 0 24px;
+  /* padding: 0 24px; */
   align-items: center;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
   max-width: 1108px;
   width: 100%;
-  /* margin: 32px 0; */
+  padding: 0px 64px;
 }
