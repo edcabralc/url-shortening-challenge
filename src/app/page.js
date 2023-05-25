@@ -63,6 +63,9 @@ export default function Home() {
         </div>
       </main>
       <footer>
+        <div></div>
+        <div></div>
+        <div></div>
         Features Link Shortening Branded Links Analytics Resources Blog
         Developers Support Company About Our Team Careers Contact
       </footer>
